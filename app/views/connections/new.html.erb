@@ -1,1 +1,24 @@
-"sandwiches"
+<%= form_for @connection do |f| %>
+  <%= f.label :name, "Name", class: "hidden-form-labels" %>
+  <%= f.text_field :name, placeholder: "Name" %>
+  <%= f.label :email, "Email", class: "hidden-form-labels" %>
+  <%= f.text_field :name, placeholder: "Email" %>
+  <%= f.label :phone, "Phone Number", class: "hidden-form-labels" %>
+  <%= f.text_field :name, placeholder: "Phone Number" %>
+  <%= f.label :company, "Company", class: "hidden-form-labels" %>
+  <%= f.text_field :name, placeholder: "Company" %>
+  <%= f.label :title, "Job Title", class: "hidden-form-labels" %>
+  <%= f.text_field :name, placeholder: "Job Title" %>
+  <%= f.label :first_contact, "Date you first met or contacted this person", class: "visible-form-labels" %>
+  <%= f.date_field :first_contact %>
+  <%= f.label :first_response, "Date this person first responded to your contact", class: "visible-form-labels" %>
+  <%= f.date_field :first_response %>
+  <%= f.label :followup, "Date you followed up with this person", class: "visible-form-labels" %>
+  <%= f.date_field :followup %>
+  <%= f.label :second_response, "Date this person responded to your follow-up", class: "visible-form-labels" %>
+  <%= f.date_field :second_response %>
+  <%= f.label :coffee_date, "Date you met with this person", class: "visible-form-labels" %>
+  <%= f.date_field :coffee_date %>
+  <%= f.submit :submit %>
+
+<% end %>
