@@ -2,7 +2,7 @@ require 'rails_helper'
 
 RSpec.describe ConnectionsController, type: :controller do
   describe 'new' do
-    before(:each) { get new_connection_path }
+    before(:each) { get :new }
     it 'renders a new connection view' do
       expect(response).to render_template :new
     end
