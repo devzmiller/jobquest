@@ -1,1 +1,34 @@
 <h2><%= @connection.name %></h2>
+<h3>Details:</h3>
+<ul>
+  <li>
+    Email: <%= @connection.email %>
+  </li>
+  <li>
+    Phone Number: <%= @connection.phone %>
+  </li>
+  <li>
+    Company: <%= @connection.company %>
+  </li>
+  <li>
+    Job Title: <%= @connection.job_title %>
+  </li>
+</ul>
+<h3>Tracking:</h3>
+<ul>
+  <li>
+    First Contact Date: <%= @connection.first_contact.strftime("%B %d, %Y") %>
+  </li>
+  <li>
+    First Response Date: <%= @connection.first_response.strftime("%B %d, %Y") %>
+  </li>
+  <li>
+    Follow-up Date: <%= @connection.followup.strftime("%B %d, %Y") || "" %>
+  </li>
+  <li>
+    Second Response Date: <%= @connection.second_response.strftime("%B %d, %Y") || "" %>
+  </li>
+  <li>
+    Coffee Date: <%= @connection.coffee_date.strftime("%B %d, %Y") %>
+  </li>
+</ul>
